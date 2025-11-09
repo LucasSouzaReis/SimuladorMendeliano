@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+
+<html lang = "pt-BR">
+        <head>
+            <meta charset="UTF-8"> 
+            <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+            <title>Simulador das Leis de Mendel</title> 
+            <link rel="stylesheet" href="index.css">
+        </head>
+        <body> 
+            <header>
+                <h1><center>Portal do Ensino de Ciências</center></h1>
+                <style>
+                    .minhaImagem{
+                        position: absolute;
+                        border: 10px solid black;
+                        margin-left: 170px;
+                        height: 336px;
+                        width: 588px;
+                    }
+                    .minhaImagem2{ /*Imagens pequenas de baixo*/
+                        /*border: 5px solid #2A9D8F;*/
+                        border: 5px solid black;
+                        width: 142px;
+                        height: 71px;
+                        margin-bottom: 10.5px;
+                    }
+                    .minhaImagem3{
+                        border: 5px solid red;
+                        width: 142px;
+                        height: 71px;
+                        margin-bottom: 10.5px;
+                    }
+                    .descricaoPrograma{
+                        background-color: #9CC4CF;
+                        margin-left: 50px;
+                    }
+                    .BotaoBaixar{
+                        color: black;
+                        text-decoration: none;
+                        position: absolute;
+                        justify-content: center; /*Centraliza verticalmente os itens dentro da classe 'BotaoBaixar'*/
+                        align-items: center;
+                        margin-top: 350px;
+                        margin-left: 400px;
+
+                    }
+                    .BotaoBaixar:hover{
+                      color: black;
+                    }
+                    .TextoBotaoBaixar{
+                        display: flex;
+                        font-size: 20px;
+                        font-family: 'Arial';
+                        background-color: #7BA6C8;
+                        border: 5px solid black;
+                        padding: 10px 50px;
+                    }
+                    T1{
+                        display: flex;
+                        text-align: center;
+                        margin-top: 10px;
+                        margin-left: 50px;
+                    }
+                    SelecionarImagens{
+                      position: absolute; /*Permite que outros itens sejam posicionados em relação a classe Selecionar Imagens*/
+                      padding-bottom: 5px;
+                    }
+                    SelecionarImagens img{
+                      display: block; /*Garante que cada imagem seja um bloco*/
+                      margin: 0px 10px;
+                    }
+                    main{
+                      position: relative; /*Para que os itens possam ser colocados em relação a classe main*/
+                      display: inline-block;
+                      margin-top: -10px;
+                      margin-left: 40px;
+                    }
+                    .Descricao{
+                        position: absolute;
+                        margin-left: 790px;
+                        /*Espaçamento Interno*/
+                        height: 400px;
+                        width: 480px;
+                        background-color: #7BA6C8;
+                        border: 5px solid black;
+                    }
+                    .Descricao p{
+                        font-size: 15px;
+                        font-family: 'Arial';
+                        margin-left: 10px;
+                        text-align: justify;
+                        margin-right: 10px;
+                    }
+                    .Descricao h2{
+                        margin-bottom: 10px;
+                        margin-left: 10px;
+                    }
+                </style>
+            </header>
+            <T1>
+                <p class = "Titulo">Simulador das Leis de Mendel</p>
+            </T1>
+            <main>
+                <SelecionarImagens>
+                  <img id = 'img1' src = 'Imagens/PagInicial.jpeg' alt = 'Simulador Mendeliano' class = 'minhaImagem3' onclick= "mudarImagem('Imagens/PagInicial.jpeg' , 'img1')"> 
+                  <img id = "img2" src = 'Imagens/SimErvilhas.jpeg' alt = 'Simulador Mendeliano' class = 'minhaImagem2' onclick= "mudarImagem('Imagens/SimErvilhas.jpeg', 'img2')">
+                  <img id = 'img3' src = 'Imagens/SimFlores.jpeg' alt = 'Simulador Mendeliano' class = 'minhaImagem2' onclick= "mudarImagem('Imagens/SimFlores.jpeg', 'img3')">
+                  <img id = 'img4' src = 'Imagens/SimGenomas.jpeg' alt = 'Simulador Mendeliano' class = 'minhaImagem2' onclick= "mudarImagem('Imagens/SimGenomas.jpeg', 'img4')">
+                </SelecionarImagens>
+                <img id = "mainImage" src = 'Imagens/PagInicial.jpeg' alt = 'Simulador Mendeliano' width="600px" height="300px" class = 'minhaImagem'>
+                <div class = 'Descricao'>
+                    <h2>
+                      Descrição
+                    </h2>
+                    <p>Este simulador foi criado para professores de ciências e biologia! Com ele é possível ter uma experiência de laboratório
+                      sem nenhum custo ou grande tempo para realiza-lo. Com ele é possível realizar as seguintes experiências:
+                    </p>
+                    <p>
+                      - Cruzamento de ervilhas de diferentes gerações.
+                    </p>
+                    <p>
+                      - Cruzamento de flores de diferentes gerações.
+                    </p>
+                    <p>
+                      - Laboratório de Criação de Ervilhas através da escolha dos genomas.
+                    </p>
+                    <p>
+                      Orientações: ao clicar no botão "baixar", você será enviado para uma página do google drive, baixe a pasta nomeada 
+                      de "Simulador Mendeliano". Após baixar a pasta, execute o arquivo "Simulador.exe" para o utilizar.
+                    </p>
+                    <p>
+                        Atenção: esse arquivo foi verificado e está livre de vírus. Por favor, certifique-se que seu antivírus não bloqueie o dowload
+                    </p>
+                  </div class = 'Descricao'>
+                    <a class = 'BotaoBaixar' target = "_blank" href = 'https://drive.google.com/drive/folders/1eAPJGzASQC_DH6uXpEuKbf0QAkL1pzuR?usp=drive_link' download = 'Simulador Mendeliano'>
+                    <p class = 'TextoBotaoBaixar'>Baixar</p>
+                  </a>
+            </main>
+            <script src = 'Script.js'></script>
+        </body>
+</html>

@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+
+<html lang = "pt-BR">
+  <body>
+    <head>
+        <meta charset="UTF-8"> 
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+        <link rel="stylesheet" href="index.css">
+        <title>Portal do Ensino de Ciências</title> 
+        <style>
+          .Login{
+            border: 4px solid black;
+            background-color: #7BA6C8;
+            padding: 10px;
+            text-align: center;
+            margin-inline: 500px;
+          }
+          .BlocoLogin{
+            border: 4px solid black;
+            width:  335px;
+            height: 200px;
+            background-color: #7BA6C8;
+            position: absolute;
+            top: 230px;
+            left: 508px;
+            /*Posicionamento dos itens*/
+          }
+          .BlocoCadastro{
+            border: 4px solid black;
+            width:  335px;
+            height: 50px;
+            background-color: #7BA6C8;
+            position: relative;
+            top: 230px;
+            left: 500px;
+            /*Sobre o texto*/
+            display: flex;
+            font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+            text-align: center;
+            justify-content: center;
+            align-items: center;
+          }
+          .Usuario{
+            position: relative;
+            top: 30px;
+            left: 5px;
+            height: 30px;
+            width:  300px;
+            border: 4px solid black;
+          }
+          .Senha{
+            position: relative;
+            top: 40px;
+            left: 5px;
+            height: 30px;
+            width:  300px;
+            border: 4px solid black;
+          }
+          .BotaoEntrar{
+            display: flex;
+            font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+            position: relative;
+            top: 50px;
+            left: 80px;
+            height: 30px;
+            width:  150px;
+            border: 4px solid black;
+            text-align: center;
+            justify-content: center;
+            align-items: center;
+          }
+        </style>
+        <body> 
+            <header>
+                <h1><center>Portal do Ensino de Ciências</center></h1>
+            </header>
+            <h1 class = 'Login'>Login</h1>
+            <div class = 'BlocoLogin'>
+                <input type="email" id="login-email" placeholder="Usuário" class = "Usuario">
+                <input type="password" id="senha" placeholder="Senha" class = "Senha">
+                <p class = "BotaoEntrar">LOGAR</p>
+            </div>
+            <div class = 'BlocoCadastro'>
+                Novo cadastro
+            </div>
+        </body>
+        <script src="Script.js"></script>
+    </html>

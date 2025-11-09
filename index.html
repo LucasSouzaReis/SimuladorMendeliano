@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+
+<html lang = "pt-BR">
+  <body>
+    <head>
+        <meta charset="UTF-8"> 
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+        <title>Portal do Ensino de Ciências</title> 
+        <link rel="stylesheet" href="index.css">
+        <style>
+            Corpo{
+                text-align: center; /*Alinha o texto dentro da classe ao centro em relação a essa classe*/
+                margin-top: 200px;
+                margin-left: 10px;
+            }
+            BotaoCursoFisica{
+                /*--- Margens ---*/
+                position: absolute;
+                margin-top: 200px;
+                background-color: brown;
+                /*Espaçamento Interno*/
+                padding-left: 123px;
+                padding-right: 123px;
+                padding-top: 50px;
+                padding-bottom: 50px;
+                /*-----------------*/
+                color: white;
+                border: 5px solid #2A9D8F;
+                font-size: 2em;
+                font: Georgia;
+                cursor: pointer; /*Transforma o cursor em uma mãosinha ao estar em cima do retêngulo*/
+                transition: background-color 0.3s, transform 0.3s;
+                text-align: center;
+            }
+            BotaoCursoFisica:hover{
+                background-color: #2A9D8F; /* Muda a cor de fundo ao passar o mouse */ 
+                transform: scale(1.05);
+            }
+        </style>
+    </head>
+    <body> 
+        <header>
+            <h1><center>Portal do Ensino de Ciências</center></h1>
+        </header>
+        <Corpo>
+            <BlocoSelecao onclick="redirecionarPagina('PaginaSimuladorMendeliano.html')">
+                Simulador Mendeliano
+            </BlocoSelecao>
+            <BotaoCursoFisica>
+                Curso de Física
+            </BotaoCursoFisica>
+        </Corpo>
+    </body>
+    <script src="Script.js"></script>
+</html>
