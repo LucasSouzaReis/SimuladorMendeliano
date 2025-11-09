@@ -17,10 +17,9 @@ BlocoSelecao{
     /*margin-top: 25px;*/
     left: 200px;
     /*-----------------*/
-    /*background-color: brown;*/
-    background-color: white;
+    background-color: brown;
     padding: 50px 75px;
-    color: black;
+    color: white;
     border: 5px solid #2A9D8F;
     font-size: 2em;
     font: Georgia;
@@ -66,6 +65,7 @@ BlocoSelecao2{
     background-color: #7BA6C8;
     border: 10px solid black;
 }
+
 
 
 
