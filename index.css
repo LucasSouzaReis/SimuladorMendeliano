@@ -14,7 +14,7 @@ header{
 BlocoSelecao{
     /*Centralizar Botão*/
     position: absolute;
-    margin-top: 100px;
+    margin-top: 150px;
     /*-----------------*/
     background-color: brown;
     padding: 50px 75px;
@@ -64,6 +64,7 @@ BlocoSelecao2{
     background-color: #7BA6C8;
     border: 10px solid black;
 }
+
 
 
 
